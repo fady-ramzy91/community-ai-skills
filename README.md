@@ -29,7 +29,7 @@ Then invoke with `@clean-unit-testing` or ask your agent to write unit tests —
 
 ## Other tools
 
-Each skill includes a `PORTABLE.md` with install snippets for Claude, GitHub Copilot, ChatGPT, JetBrains AI, and more.
+Each skill includes a `PORTABLE.md` with install snippets for Claude, GitHub Copilot, ChatGPT, and more.
 
 ## Skill layout
 

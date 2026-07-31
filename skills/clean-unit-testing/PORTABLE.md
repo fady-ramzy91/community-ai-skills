@@ -64,10 +64,6 @@ Confirm briefly which concept each test covers.
 
 Then paste the checklist from `SKILL.md`.
 
-## JetBrains AI / other IDEs
-
-Put the same bullet list in the IDE’s “AI guidelines” / “project prompt” field. Keep it under ~40 lines if the field is short — use the Copilot block above.
-
 ## Team distribution
 
 1. Commit `.cursor/skills/clean-unit-testing/` (and optionally `.cursor/rules/clean-unit-tests.mdc`) to the repo.
