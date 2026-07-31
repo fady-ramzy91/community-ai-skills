@@ -2,6 +2,17 @@
 
 Thanks for helping grow **Community AI Skills**.
 
+## Contribution workflow (required)
+
+**Direct pushes to `main` are not allowed.** All changes must go through a pull request (merge request).
+
+1. Fork the repository (or create a branch from `main` if you have write access).
+2. Make your changes on a feature branch.
+3. Open a pull request against `main`.
+4. Wait for review and merge.
+
+Do not push commits straight to `main`.
+
 ## Add a new skill
 
 1. Create a folder: `skills/<skill-name>/` (lowercase, hyphens).
