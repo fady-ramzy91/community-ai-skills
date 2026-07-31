@@ -3,10 +3,9 @@ name: clean-unit-testing
 description: >-
   Enforce Clean Code Chapter 9 unit-testing principles (Three Laws of TDD,
   clean tests, one concept per test, F.I.R.S.T., readability) when writing,
-  generating, refactoring, or reviewing unit tests in any language (Swift
-  Testing, XCTest, Kotlin/JUnit, Jest, pytest, etc.). Use whenever the user
-  asks for unit tests, TDD, test coverage, test refactoring, test names,
-  mocks/fakes, or AI-assisted test generation.
+  generating, refactoring, or reviewing unit tests in any language or test
+  framework. Use whenever the user asks for unit tests, TDD, test coverage,
+  test refactoring, test names, mocks/fakes, or AI-assisted test generation.
 ---
 
 # Clean Unit Testing (Clean Code, Ch. 9)
