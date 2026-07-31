@@ -41,63 +41,22 @@ important case only.
 | Mock everything | Assert outcomes; mock boundaries only |
 | Print results for me to check | Self-validating asserts |
 
-## Swift Testing (when the project uses it)
-
-```swift
-import Testing
-
-@Test func divideByZeroThrowsError() {
-  #expect(throws: (any Error).self) {
-    try Calculator().divide(10, by: 0)
-  }
-}
-
-@Test func loginWithValidCredentialsSucceeds() {
-  let result = AuthService().login(email: "a@b.com", password: "pw123456")
-  #expect(result.isSuccess)
-}
-```
-
-## Kotlin / JUnit (when the project uses it)
-
-```kotlin
-@Test
-fun `divide by zero throws exception`() {
-  assertThrows<ArithmeticException> {
-    Calculator().divide(10, 0)
-  }
-}
-
-@Test
-fun `discount is applied when cart total exceeds threshold`() {
-  // Given
-  val cart = Cart(items = listOf(Item(price = 60.0)))
-  // When
-  val total = PricingEngine().calculateTotal(cart)
-  // Then
-  assertEquals(54.0, total, 0.01)
-}
-```
-
 ## Messy → clean
 
-```kotlin
+```
 // BAD — multi-concept, opaque name
-@Test
-fun test1() {
-  assertTrue(UserValidator().validate(User("a@b.com", "pw123456")))
-  assertFalse(UserValidator().validate(User("bad-email", "pw123456")))
+test test1() {
+  assertTrue(validate(User("a@b.com", "pw123456")))
+  assertFalse(validate(User("bad-email", "pw123456")))
 }
 
 // GOOD — one concept each
-@Test
-fun `valid email and password passes validation`() {
-  assertTrue(UserValidator().validate(User("a@b.com", "pw123456")))
+test valid_email_and_password_passes_validation() {
+  assertTrue(validate(User("a@b.com", "pw123456")))
 }
 
-@Test
-fun `invalid email fails validation`() {
-  assertFalse(UserValidator().validate(User("bad-email", "pw123456")))
+test invalid_email_fails_validation() {
+  assertFalse(validate(User("bad-email", "pw123456")))
 }
 ```
 
