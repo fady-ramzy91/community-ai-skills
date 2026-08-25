@@ -9,6 +9,7 @@ Instead of rewriting the same prompts in every chat, you install a skill once an
 | Skill | Description |
 |-------|-------------|
 | [clean-unit-testing](skills/clean-unit-testing/) | Clean Code Ch. 9 unit testing: Three Laws of TDD, one concept per test, F.I.R.S.T., readability — framework-agnostic |
+| [clean-classes](skills/clean-classes/) | Clean Code Ch. 10 classes: run naming test, SRP, cohesion, Open/Closed, and DIP on any type — split if it has more than one responsibility |
 
 More skills will land here over time. Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
